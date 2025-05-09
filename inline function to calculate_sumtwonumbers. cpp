@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+// Inline function to calculate the sum of two numbers
+inline int sum(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1, num2;
+
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+
+    // Call the inline function to calculate the sum
+    cout << "The sum of " << num1 << " and " << num2 << " is " << sum(num1, num2) << endl;
+
+    return 0;
+}
